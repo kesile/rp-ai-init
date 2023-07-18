@@ -1,5 +1,5 @@
 import openai
-API_KEY = "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"
+API_KEY = "sk-###########################"
 
 openai.api_key = API_KEY
 memory = []
