@@ -1,5 +1,3 @@
-import asyncio
-
 def adv(post, parameters, persona):
   name = parameters["name"]
   industry = parameters["industry"]
@@ -24,7 +22,7 @@ def adv(post, parameters, persona):
   Name: {name}
   Industry: {industry}
   Subject: {subject}
-  Subject Description: {details}
+  Subject Details: {details}
   Ideal Tone: {tone}
   Target Audience: {targetAudience}
   Brand Position: {brandPosition}
