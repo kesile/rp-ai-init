@@ -1,5 +1,3 @@
-import asyncio
-
 def campaignPost(parameters):
     name = parameters["name"]
     industry = parameters["industry"]

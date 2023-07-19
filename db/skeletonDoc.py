@@ -1,10 +1,11 @@
-def createDoc(name, desc, subject, details, industry, tone, targetAudience, brandPersonality, cta, length, uniqueAdvantage, examples):
+def createDoc(name, desc, industry, subject, details, platform, tone, targetAudience, brandPersonality, cta, length, uniqueAdvantage, examples):
     parameters = {
         "name" : name,
         "desc" : desc,
+        "industry": industry,
         "subject" : subject,
         "details" : details,
-        "industry" : industry,
+        "platform" : platform,
         "tone" : tone,
         "targetAudience" : targetAudience,
         "brandPersonality" : brandPersonality,

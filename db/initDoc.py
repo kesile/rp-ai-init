@@ -12,6 +12,7 @@ def initDoc():
             "UX Design Meet",
             "Redpeak is hosting a UX design meet at their headquarters on the 21st Floor of the Taipei 101 at 3:00PM, Monday July 17th",
             "Design, UX",
+            "Instagram",
             "Friendly, inviting, knowledgable",
             "UX/Design Professionals Looking To Expand Their Skills",
             "Knowledgable, friendly, and a leader",
@@ -26,21 +27,22 @@ def initDoc():
             """
         )
     else:
-        name = input("\nName? ")
-        desc = input("Company description? ")
-        subject = input("What's the post about? ")
-        details = input("What're the details? ")
-        industry = input("What's the industry of the company? ")
-        tone = input("How do you want to sound in the post? ")
-        targetAudience = input("What's your target demographic for this post? ")
-        brandPersonality = input("What's the personality of your brand? ")
-        cta = input("What do you want the person to do after viewing your post? ")
-        length = input("Do you want to customize your post length? (Y/N) ")
+        name = input("\nName (1/13(? ")
+        desc = input("Company description (2/13)? ")
+        subject = input("What's the post about (3/13)? ")
+        details = input("What're the details (4/13)? ")
+        industry = input("What's the industry of the company (5/13)? ")
+        platform = input("Which platform are you posting (6/13)? ")
+        tone = input("How do you want to sound in the post (7/13)? ")
+        targetAudience = input("What's your target demographic for this post (8/13)? ")
+        brandPersonality = input("What's the personality of your brand (9/13)? ")
+        cta = input("What do you want the person to do after viewing your post (10/13)? ")
+        length = input("Do you want to customize your post length (11/13)? (Y/N) ")
         if length == "Y" : length = input("How many words should your post be around? ")
         else: length = "Whatever is best."
-        uniqueAdvantage = input("What is the unique advantage of this event? ")
-        examples = input("What are some example posts? ")
-        parameters = createDoc(name, desc, subject, details, industry, tone, targetAudience, brandPersonality, cta, length, uniqueAdvantage, examples)
+        uniqueAdvantage = input("What is the unique advantage of this event (12/13)? ")
+        examples = input("What are some example posts (13/13)? ")
+        parameters = createDoc(name, desc, subject, details, industry, platform, tone, targetAudience, brandPersonality, cta, length, uniqueAdvantage, examples)
     
     print("\nParameters generated successfully.")
 
