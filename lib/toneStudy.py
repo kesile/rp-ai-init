@@ -19,6 +19,7 @@ posts2 = ["""Morgan Stanley reports second quarter 2023 net revenues of $13.5 bi
         """“Montréal is a key strategic location given its world-class talent, investment in tech innovation and proximity to our headquarters,” says Mike Pizzi, Head of Technology & U.S. Banks at Morgan Stanley, in conversation with Montréal Regional Head, Sophia Bennaceur. “Morgan Stanley Montréal has established itself as an employer of choice in the city’s vibrant technology landscape. We look forward to continuing to invest in our people’s growth and our city’s future,” added Sophia.
         Find out more about life in our Canada offices: https://lnkd.in/dtWU_iuT"""]
 
+# this will be the post that the model generates in
 postTesting = """
 We're pleased to share an update on Morgan Stanley's financial results for the third quarter of 2022.
 
