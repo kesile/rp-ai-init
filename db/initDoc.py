@@ -27,7 +27,7 @@ def initDoc():
             """
         )
     else:
-        name = input("\nName (1/13(? ")
+        name = input("\nName (1/13)? ")
         desc = input("Company description (2/13)? ")
         subject = input("What's the post about (3/13)? ")
         details = input("What're the details (4/13)? ")
