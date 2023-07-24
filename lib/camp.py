@@ -16,7 +16,7 @@ def campaignPost(parameters):
         "3": "Follower Engagement",
         "4": "Event Announcement"
     }
-    postType = input("""\nWhat type of campaign post are you creating?" \n1.Product Detail  -  2.Product Use Scenarios  -  3.Follower Engagement  -  4.Event Announcement""")
+    postType = input("""\nWhat type of campaign post are you creating?" \n(1) Product Detail\n(2) Product Use Scenarios\n(3) Follower Engagement\n(4) Event Announcement\nChoice: """)
     postType = postType_options.get(postType, "Unknown")
 
     output = f"""

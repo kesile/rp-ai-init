@@ -6,7 +6,7 @@ def mp():
     }
 
     platforms = input(
-        """\nWhat platform are you posting? \n1.LinkedIn  -  2.Instagram:  """)
+        """\nWhat platform are you posting? \n(1) LinkedIn\n(2) Instagram\nChoice: """)
 
     platforms = platforms_options.get(platforms, "Unknown")
 

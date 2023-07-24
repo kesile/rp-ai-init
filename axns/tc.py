@@ -1,7 +1,7 @@
 import openai
 from concurrent.futures import ThreadPoolExecutor
 
-API_KEY = "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"
+API_KEY = "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"
 
 openai.api_key = API_KEY
 memory = []

@@ -9,11 +9,12 @@ from lib.init import gp, lin
 from lib.adv import adv, personas, summarize
 from lib.upd import upd
 from lib.camp import campaignPost
-
+from lib.campaign.initPrompt import generateInitialPrompt
 import openai
 import asyncio
 from aiohttp import ClientSession
 from threading import Thread
+from lib.campaign.splitter import splitterTron
 
 parameters = initDoc()
 
@@ -81,6 +82,11 @@ else:
         return text(adv(post, parameters, persona))
 
     async def main():
+        campaignPrompt = generateInitialPrompt(mp, parameters, "10")
+        campaign = text(campaignPrompt)
+        campaignPlan = splitterTron(campaign)
+        print(campaignPlan)
+        quit()
         post = text(campaignPost(parameters))
         st(uq, post, "inPo")
 
