@@ -14,6 +14,7 @@ def index():
         data['title'] = request.form['title']
         data['content'] = request.form['content']
 
+
         data_list.append(data)
 
     return render_template('data.html', data=data_list)
@@ -28,7 +29,7 @@ def save_data():
 
     return "Data saved to file."
 
-
+#not in use
 @app.route('/load')
 def load_data():
     with open('data.json', 'r') as f:
